@@ -1,0 +1,169 @@
+/*****BASE STYLES*****/
+body {
+   font-family: 'Open Sans', sans-serif;
+   color: #bbbfdc;
+   background: #373f7f;
+   background-attachment: fixed;
+   background-size: cover;
+}
+/*****BACKGROUND*****/
+.fullscreen-video  {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+video {
+  object-fit: none;
+}
+@media (max-width: 767px) {
+  .fullscreen-video {
+    background: url('../img/background.jpg') center center / cover no-repeat;
+  }
+  .background {
+    display: none;
+  }
+}
+/*****GRID*****/
+.full-width {
+  width: fit-content;
+  margin: 0 auto;
+}
+.half-width {
+  width: 50%;
+  float: left;
+}
+/*****HEADER*****/
+header {
+  font-family: 'Patua One';
+  font-size: 48px;
+  color: #5d617f;
+  text-align: center;
+}
+/*****BODY*****/
+#about h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#about ul li {
+  list-style: none;
+  line-height: 150%;
+}
+#about {
+  margin-left: 20%;
+}
+#history h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 150%;
+}
+#history ul li {
+  list-style: none;
+  line-height: 150%;
+}
+#history li {
+  text-decoration: underline;
+}
+#jubilee li:hover {
+  position: relative;
+}
+#jubilee li:hover:after {
+  content: url('../img/jubilee-austen-small.png');
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: -100px;
+}
+#rogue li:hover {
+  position: relative;
+}
+#rogue li:hover:after {
+  content: url('../img/rogue-pickings-small.png');
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: -100px;
+}
+/*****FOOTER*****/
+footer {
+  clear: both;
+  text-align: center;
+  font-family: 'Patua One';
+  font-size: 36px;
+}
+footer a {
+  text-decoration: none;
+}
+footer ul li {
+  list-style: none;
+  display: inline;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+footer h2 {
+  padding-top: 80px;
+  margin-bottom: 0px;
+  line-height: 20%;
+}
+#facebook {
+  width: 32px;
+  height: 32px;
+  background: url('../img/facebook_dark.png') no-repeat;
+  display: inline-block;
+}
+#facebook:hover {
+  background: url('../img/facebook_active.png') no-repeat;
+}
+#twitter {
+  width: 32px;
+  height: 32px;
+  background: url('../img/twitter_dark.png') no-repeat;
+  display: inline-block;
+}
+#twitter:hover {
+  background: url('../img/twitter_active.png') no-repeat;
+}
+#skype {
+  width: 32px;
+  height: 32px;
+  background: url('../img/skype_dark.png') no-repeat;
+  display: inline-block;
+}
+#skype:hover {
+  background: url('../img/skype_active.png') no-repeat;
+}
+#google {
+  width: 32px;
+  height: 32px;
+  background: url('../img/google_dark.png') no-repeat;
+  display: inline-block;
+}
+#google:hover {
+  background: url('../img/google_active.png') no-repeat;
+}
+#vcard {
+  width: 32px;
+  height: 32px;
+  background: url('../img/vcard_dark.png') no-repeat;
+  display: inline-block;
+}
+#vcard:hover {
+  background: url('../img/vcard_active.png') no-repeat;
+}
+#share {
+  width: 32px;
+  height: 32px;
+  background: url('../img/share_dark.png') no-repeat;
+  display: inline-block;
+}
+#share:hover {
+  background: url('../img/share_active.png') no-repeat;
+}
